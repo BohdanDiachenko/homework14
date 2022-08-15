@@ -3,6 +3,11 @@ body {
     font-weight: 400;
     
 }
+:root {
+	--container-width: 1390px;
+	--container-padding: 30px;
+    --color-button: #FF6336;
+}
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -12,9 +17,9 @@ body {
     position: relative;
 }
 [class*="__container"] {
-    max-width: 1390px;
+    max-width:  var(--container-width);
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 var(--container-padding);
 }
 ul,
 li {
