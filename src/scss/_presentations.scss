@@ -16,15 +16,24 @@
         flex-direction: row-reverse;
         .presentations__block-content{
             padding-left: 112px;
+            gap: 25px;
         }
     }
     &__block-content {
         display: flex;
         flex-direction: column;
         flex: 0 0 47%;
-        align-items: flex-start;
         justify-content: center;
         gap: 30px;
+        h3{
+            max-width: 500px;
+        }
+        p {  
+            max-width: 500px;
+        }
+        a {
+            font-weight: 600;
+        }
     }
     &__image{
         display: flex;

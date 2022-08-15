@@ -400,6 +400,10 @@ p {
   margin: 0;
 }
 
+u {
+  font-weight: 400;
+}
+
 .big__title {
   font-size: 65px;
   line-height: 70px;
@@ -421,7 +425,11 @@ p {
 .link {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 600;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: #FF9C7D;
 }
 
 h1,
@@ -624,6 +632,7 @@ h6 {
   align-items: center;
   gap: 60px;
   margin-bottom: 90px;
+  padding-top: 14px;
 }
 .company__title-wrapper {
   display: flex;
@@ -665,14 +674,23 @@ h6 {
 }
 .presentations__block:nth-child(even) .presentations__block-content {
   padding-left: 112px;
+  gap: 25px;
 }
 .presentations__block-content {
   display: flex;
   flex-direction: column;
   flex: 0 0 47%;
-  align-items: flex-start;
   justify-content: center;
   gap: 30px;
+}
+.presentations__block-content h3 {
+  max-width: 500px;
+}
+.presentations__block-content p {
+  max-width: 500px;
+}
+.presentations__block-content a {
+  font-weight: 600;
 }
 .presentations__image {
   display: flex;
@@ -687,13 +705,14 @@ h6 {
   display: flex;
   flex-direction: column;
   padding-top: 123px;
-  padding-bottom: 154px;
+  padding-bottom: 74px;
   background: #FFF8E4;
   gap: 20px;
 }
 .lokalise__title-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 64px;
 }
 .lokalise__list {
   display: flex;
@@ -703,17 +722,20 @@ h6 {
   flex: 0 0 33.3333333333%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 60px 60px 10px;
   font-size: 18px;
   line-height: 25px;
+  padding: 0 50px 76px;
 }
 .lokalise__list li h4 {
   font-size: 25px;
   line-height: 35px;
   font-weight: 600;
+  margin-bottom: 23px;
+}
+.lokalise__list li a {
+  margin-bottom: 12px;
 }
 
 .boost-productivity {
@@ -829,7 +851,6 @@ h6 {
 
 .integration {
   padding: 169px 0 162px 0;
-  border-bottom: 1px solid #000;
 }
 .integration__container .big__title {
   margin-bottom: 8px;
@@ -901,6 +922,9 @@ h6 {
 .footer-up .up__info p {
   margin-bottom: 15px;
 }
+.footer-up .up__info a {
+  font-weight: 600;
+}
 .footer-up .footer__nav {
   display: flex;
   gap: 34px;
@@ -921,6 +945,9 @@ h6 {
   flex-direction: column;
   gap: 11px;
   padding: 20px 0;
+}
+.footer-up .footer__nav-menu a:hover {
+  color: #FF9C7D;
 }
 
 .footer-down {
