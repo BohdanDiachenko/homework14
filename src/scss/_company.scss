@@ -1,0 +1,33 @@
+.company {
+    background-color: #FF9C7D;
+    &__container {
+        min-height: 455px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 90px;
+    }
+    &__title-wrapper{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    &__title {
+        max-width: 777px;
+        padding-left: 112px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+.presentations {
+    background-color: #fff;
+    margin-bottom: 150px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 255px;
+        
+    }
+    &__block {
+        display: flex;;
+        justify-content: space-evenly;
+    }
+    &__block:nth-child(even){
+        flex-direction: row-reverse;
+        .presentations__block-content{
+            padding-left: 112px;
+        }
+    }
+    &__block-content {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 47%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__image{
+        display: flex;
+        flex: 0 0 627px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+

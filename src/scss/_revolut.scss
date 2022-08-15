@@ -1,0 +1,30 @@
+.revolut {
+    background-color: #C9E8F2;
+    padding: 52px 0 95px;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 110px;
+        padding: 0 20px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    &__quote {
+        max-width: 901px;
+        padding: 10px 0 0 30px;
+        blockquote {
+            margin: 0 0 26px;
+        }
+        figcaption {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+    &__image {
+        img{
+            width: 310px;
+            height: 310px;
+        }
+}
+}

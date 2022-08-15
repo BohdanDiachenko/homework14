@@ -1,0 +1,38 @@
+.bridge {
+    background-color: #DABC98;
+    padding: 89px 0 86px;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 67px;
+        flex: 0 0 62%;
+        h5{
+            font-size: 35px;
+            line-height: 50px;
+            font-weight: 600;
+        }
+    }
+    &__company {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-grow: 1;
+        border-left: 1px solid #000;
+        .companies{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            >img{
+                height: 38px;
+                margin-bottom: 20px;
+            }
+            .stars__wrapper{
+                margin-bottom: 13px;
+            }
+        }
+    }
+}

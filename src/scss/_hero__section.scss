@@ -1,0 +1,38 @@
+.hero {
+    min-height: calc(100vh - 95px) ;
+    display: flex;
+    align-items: center;
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+    }
+    &__content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        
+        h1{
+            max-width: 540px;
+        }
+        p{
+            max-width: 471px;
+            font-size: 25px;
+            line-height: 35px;
+        }
+        span {
+            font-size: 15px;
+            line-height: 25px;   
+        }
+       
+    }
+    &__buttons{
+        padding-bottom: 25px;
+    }
+    &__image {
+        max-width: 759px;
+        flex-grow: 1;
+    }
+}
