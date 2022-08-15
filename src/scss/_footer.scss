@@ -2,10 +2,18 @@
     background-color: #fff;
     &__container {
         display: flex;
-        justify-content: start;
         gap: 106px;
-        padding: 95px 50px;
-
+        padding: 87px 20px 92px 50px;
+        position: relative;
+        &::after{
+            content: "";
+            border-bottom: 2px solid #000;
+            display: block;
+            width: 1290px;
+            position: absolute;
+            top: 100%;
+            z-index: 111;
+        }
     }
     &-info {
         display: flex;
@@ -19,15 +27,15 @@
             font-size: 40px;
             line-height: 60px;
             font-weight: 600;
-            margin-bottom: 28px;
+            margin-bottom: 22px;
         }
         &-image{
-            margin-bottom: 39px;
+            margin-bottom: 31px;
         }
         &-logo{
             height: 32px;
             width: 80px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         p{
             margin-bottom: 15px;
@@ -35,16 +43,12 @@
     }
     .footer__nav {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
-        padding: 0 20px;
-        
+        gap: 34px;
+        padding: 9px 34px;
         &-box {
             display: flex;
             flex-direction: column;
             flex: 0 0 187px;
-            padding: 0 15px;
             h6{
                 font-size: 20px;
                 line-height: 25px;
@@ -54,8 +58,31 @@
         &-menu {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 11px;
             padding: 20px 0;
         }
     }
+}
+.footer-down {
+    background-color: #fff;
+    padding: 54px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    &-content {
+        display: flex;
+        gap: 14px;
+        padding: 0 20px;
+        p{
+            max-width: 300px;
+        }
+    }
+    &-info {
+        padding: 0 97px 0 20px;
+    }
+
+
 }

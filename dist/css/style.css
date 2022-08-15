@@ -829,6 +829,7 @@ h6 {
 
 .integration {
   padding: 169px 0 162px 0;
+  border-bottom: 1px solid #000;
 }
 .integration__container .big__title {
   margin-bottom: 8px;
@@ -848,12 +849,12 @@ h6 {
   padding: 120px 0 160px 0;
 }
 .localization .big__title {
-  margin-bottom: 29px;
+  margin-bottom: 35px;
 }
 .localization h6 {
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 64px;
+  margin-bottom: 55px;
 }
 
 .footer-up {
@@ -861,9 +862,18 @@ h6 {
 }
 .footer-up__container {
   display: flex;
-  justify-content: start;
   gap: 106px;
-  padding: 95px 50px;
+  padding: 87px 20px 92px 50px;
+  position: relative;
+}
+.footer-up__container::after {
+  content: "";
+  border-bottom: 2px solid #000;
+  display: block;
+  width: 1290px;
+  position: absolute;
+  top: 100%;
+  z-index: 111;
 }
 .footer-up-info {
   display: flex;
@@ -878,30 +888,28 @@ h6 {
   font-size: 40px;
   line-height: 60px;
   font-weight: 600;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 .footer-up .up__info-image {
-  margin-bottom: 39px;
+  margin-bottom: 31px;
 }
 .footer-up .up__info-logo {
   height: 32px;
   width: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .footer-up .up__info p {
   margin-bottom: 15px;
 }
 .footer-up .footer__nav {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 20px;
+  gap: 34px;
+  padding: 9px 34px;
 }
 .footer-up .footer__nav-box {
   display: flex;
   flex-direction: column;
   flex: 0 0 187px;
-  padding: 0 15px;
 }
 .footer-up .footer__nav-box h6 {
   font-size: 20px;
@@ -911,6 +919,28 @@ h6 {
 .footer-up .footer__nav-menu {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 11px;
   padding: 20px 0;
+}
+
+.footer-down {
+  background-color: #fff;
+  padding: 54px 0;
+}
+.footer-down__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer-down-content {
+  display: flex;
+  gap: 14px;
+  padding: 0 20px;
+}
+.footer-down-content p {
+  max-width: 300px;
+}
+.footer-down-info {
+  padding: 0 97px 0 20px;
 }
