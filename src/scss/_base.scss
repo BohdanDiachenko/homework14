@@ -57,7 +57,7 @@ u{
     transition: color .5s;
 }
 .link:hover{
-    color: #FF9C7D;
+    color: var(--color-button);
 }
 h1,
 h2,

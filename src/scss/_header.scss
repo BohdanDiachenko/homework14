@@ -42,7 +42,7 @@
             bottom: -5px;
             left: 0;
             right: 100%;
-            background-color: #FF6336;
+            background-color: var(--color-button);
             height: 3px;
             transition: right .5s;
             z-index: -1;

@@ -435,7 +435,7 @@ u {
 }
 
 .link:hover {
-  color: #FF9C7D;
+  color: var(--color-button);
 }
 
 h1,
@@ -576,7 +576,7 @@ h6 {
   bottom: -5px;
   left: 0;
   right: 100%;
-  background-color: #FF6336;
+  background-color: var(--color-button);
   height: 3px;
   transition: right 0.5s;
   z-index: -1;
@@ -954,7 +954,7 @@ h6 {
   padding: 20px 0;
 }
 .footer-up .footer__nav-menu a:hover {
-  color: #FF9C7D;
+  color: var(--color-button);
 }
 
 .footer-down {
