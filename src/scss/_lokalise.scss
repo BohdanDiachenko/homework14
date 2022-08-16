@@ -1,10 +1,10 @@
 .lokalise {
+    background: #FFF8E4;
     &__container {
         display: flex;
         flex-direction: column;
         padding-top: 123px;
         padding-bottom: 74px;
-        background: #FFF8E4;
         gap: 20px;
     }
     &__title-wrapper {

@@ -1,12 +1,11 @@
+:root {
+    --container-width: 1390px;
+    --container-padding: 30px;
+    --color-button: #36ff40;
+}
 body {
     font-family: "GraphikLCG", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    
-}
-:root {
-	--container-width: 1390px;
-	--container-padding: 30px;
-    --color-button: #FF6336;
 }
 #wrapper {
     display: flex;
@@ -67,9 +66,12 @@ h5,
 h6{
     margin: 0;
 }
-// * img {
-//     width: 100%;
-// }
+img {
+    // width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
 .dnon{
     display: none;
 }

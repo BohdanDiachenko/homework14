@@ -364,15 +364,15 @@ template {
   font-weight: 600;
   font-style: normal;
 }
-body {
-  font-family: "GraphikLCG", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-}
-
 :root {
   --container-width: 1390px;
   --container-padding: 30px;
-  --color-button: #FF6336;
+  --color-button: #36ff40;
+}
+
+body {
+  font-family: "GraphikLCG", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 #wrapper {
@@ -445,6 +445,12 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 .dnon {
@@ -607,14 +613,14 @@ h6 {
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  font-size: 25px;
+  line-height: 35px;
 }
 .hero__content h1 {
   max-width: 540px;
 }
 .hero__content p {
   max-width: 471px;
-  font-size: 25px;
-  line-height: 35px;
 }
 .hero__content span {
   font-size: 15px;
@@ -649,7 +655,6 @@ h6 {
 }
 .company__title {
   max-width: 777px;
-  padding-left: 112px;
 }
 .company__list {
   display: flex;
@@ -708,12 +713,14 @@ h6 {
   height: auto;
 }
 
+.lokalise {
+  background: #FFF8E4;
+}
 .lokalise__container {
   display: flex;
   flex-direction: column;
   padding-top: 123px;
   padding-bottom: 74px;
-  background: #FFF8E4;
   gap: 20px;
 }
 .lokalise__title-wrapper {
