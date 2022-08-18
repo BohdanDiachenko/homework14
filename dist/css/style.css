@@ -496,16 +496,6 @@ img {
   border-color: var(--color-button);
   color: #fff;
 }
-.btn__white__bleck {
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
-}
-.btn__white__bleck:hover {
-  background-color: #fff;
-  border-color: #000;
-  color: #000;
-}
 .btn__wide {
   display: block;
   width: 160px;
@@ -519,6 +509,16 @@ img {
   display: block;
   width: 120px;
   text-align: center;
+}
+.btn__bleck {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.btn__bleck:hover {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
 }
 
 [class*=__buttons] {

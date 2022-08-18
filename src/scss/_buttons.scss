@@ -23,16 +23,6 @@
             border-color: var(--color-button);
             color: #fff; 
          }
-        &__bleck{
-            background-color: #000;
-            border-color: #000;
-            color: #fff;
-            &:hover{
-                background-color: #fff;
-                border-color: #000;
-                color: #000;
-            }
-        }
     }
     &__wide{
         display: block;
@@ -48,6 +38,16 @@
         display: block;
         width: 120px;
         text-align: center;
+    }
+    &__bleck{
+        background-color: #000;
+        border-color: #000;
+        color: #fff;
+        &:hover{
+            background-color: #fff;
+            border-color: #000;
+            color: #000;
+        }
     }
 }
  [class*="__buttons"] {
