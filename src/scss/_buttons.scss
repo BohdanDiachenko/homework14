@@ -4,52 +4,51 @@
     line-height: 45px;
     transition: background-color 1s, color 0.5s;
     border: solid 1px;
-}
-.btn__orange{
-    color: #fff;
-    background-color: var(--color-button);
-    border-color:  var(--color-button) ;
-}
-
-.btn__orange:hover{
-    background-color: #fff;
-    border-color: #000;
-    color: #000;
-}
-.btn__wide{
-    display: block;
-    width: 160px;
-    line-height: 60px;
-    text-align: center;
-}
-.btn__very-wide{
-    width: 193px;
-}
-.btn__white {
-    background-color: #fff;
-    border-color: #000;
-    color: #000;
-}
-.btn__bleck{
-    background-color: #000;
-    border-color: #000;
-    color: #fff;
-}
-.btn__bleck:hover{
-    background-color: #fff;
-    border-color: #000;
-    color: #000;
-}
-
-.btn__white:hover {
-    background-color: var(--color-button);
-    border-color: var(--color-button);
-    color: #fff; 
- }
-.btn__narrow{
-    display: block;
-    width: 120px;
-    text-align: center;
+    &__orange{
+        color: #fff;
+        background-color: var(--color-button);
+        border-color:  var(--color-button) ;
+        &:hover{
+            background-color: #fff;
+            border-color: #000;
+            color: #000;
+        }
+    }
+    &__white {
+        background-color: #fff;
+        border-color: #000;
+        color: #000;
+        &:hover {
+            background-color: var(--color-button);
+            border-color: var(--color-button);
+            color: #fff; 
+         }
+        &__bleck{
+            background-color: #000;
+            border-color: #000;
+            color: #fff;
+            &:hover{
+                background-color: #fff;
+                border-color: #000;
+                color: #000;
+            }
+        }
+    }
+    &__wide{
+        display: block;
+        width: 160px;
+        line-height: 60px;
+        text-align: center;
+    }
+    &__very-wide{
+        width: 193px;
+    }
+    
+    &__narrow{
+        display: block;
+        width: 120px;
+        text-align: center;
+    }
 }
  [class*="__buttons"] {
     display: flex;
