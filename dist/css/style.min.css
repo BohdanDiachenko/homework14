@@ -461,6 +461,10 @@ img {
   height: 957px;
 }
 
+figure {
+  margin: 0;
+}
+
 .identical__container {
   display: flex;
   flex-direction: column;
@@ -742,7 +746,7 @@ img {
   margin-bottom: 23px;
 }
 .lokalise__list li a {
-  margin-bottom: 12px;
+  margin-bottom: 19px;
 }
 
 .boost-productivity {
@@ -791,7 +795,7 @@ img {
 
 .revolut {
   background-color: #C9E8F2;
-  padding: 52px 0 95px;
+  padding: 52px 0 106px;
 }
 .revolut__container {
   display: flex;
@@ -819,7 +823,7 @@ img {
 
 .bridge {
   background-color: #DABC98;
-  padding: 89px 0 86px;
+  padding: 89px 0 87px;
 }
 .bridge__container {
   display: flex;
@@ -857,7 +861,7 @@ img {
 }
 
 .integration {
-  padding: 169px 0 162px 0;
+  padding: 169px 0 161px 0;
 }
 .integration__container .big__title {
   margin-bottom: 8px;
@@ -869,7 +873,7 @@ img {
   margin-bottom: 25px;
 }
 .integration__container img {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .localization {
@@ -891,12 +895,12 @@ img {
 .footer-up__container {
   display: flex;
   gap: 106px;
-  padding: 87px 20px 92px 50px;
+  padding: 87px 20px 96px 50px;
   position: relative;
 }
 .footer-up__container::after {
   content: "";
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   display: block;
   width: 1290px;
   position: absolute;
@@ -964,6 +968,7 @@ img {
 .footer-down__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   line-height: 15px;
 }
