@@ -2,38 +2,80 @@
     background-color: #DABC98;
     padding: 89px 0 87px;
     &__container {
-        display: flex;
-        flex-wrap: wrap;
+        
+        @media (min-width: 992px){
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
     &__content {
-        display: flex;
-        align-items: center;
-        gap: 67px;
-        flex: 0 0 62%;
-        padding: 0 24px;
+            padding: 0 24px;
+            margin-bottom: 40px;
+            text-align: center;
+        @media (min-width: 485px){
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 33px;
+            flex: 0 0 62%;
+        }
+        @media (min-width: 992px){
+            margin-bottom: 0;
+        }
+        @media (min-width: 1029px){
+            gap: 67px;
+        }
         h5{
-            font-size: 35px;
-            line-height: 50px;
+            font-size: 22px;
+            line-height: 36px;
             font-weight: 600;
+            padding-top: 40px;
+            @media (min-width: 485px){
+                padding-top: 0;
+            }
+            @media (min-width: 530px){
+                font-size: 28px;
+                line-height: 44px;
+            }
+            @media (min-width: 1154px){
+                font-size: 35px;
+                line-height: 50px;
+            }
         }
     }
     &__company {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin: 0 auto;
         flex-grow: 1;
-        border-left: 1px solid #000;
-        padding-right: 35px;
+        border-top: 1px solid #000;
+        padding-top: 30px;
+        @media (min-width: 352px){
+            
+        }
+        @media (min-width: 992px){
+            border-left: 1px solid #000;
+            border-top: none;
+            padding-top: 0;
+            padding-right: 35px;
+        }
         .companies{
             display: flex;
             flex-direction: column;
             align-items: start;
+            
+            @media (max-width: 351px){
+                flex: 0 1 50%;
+            }
             >img{
                 height: 38px;
                 margin-bottom: 20px;
             }
             .stars__wrapper{
                 margin-bottom: 13px;
+                display: flex;
+                
             }
         }
     }

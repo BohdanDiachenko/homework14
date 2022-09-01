@@ -1409,7 +1409,6 @@ figure {
   }
 }
 .revolut__quote blockquote {
-  text-align: justify;
   margin: 0 0 26px;
 }
 @media (min-width: 750px) {
@@ -1436,34 +1435,85 @@ figure {
   background-color: #DABC98;
   padding: 89px 0 87px;
 }
-.bridge__container {
-  display: flex;
-  flex-wrap: wrap;
+@media (min-width: 992px) {
+  .bridge__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .bridge__content {
-  display: flex;
-  align-items: center;
-  gap: 67px;
-  flex: 0 0 62%;
   padding: 0 24px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 485px) {
+  .bridge__content {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    flex: 0 0 62%;
+  }
+}
+@media (min-width: 992px) {
+  .bridge__content {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1029px) {
+  .bridge__content {
+    gap: 67px;
+  }
 }
 .bridge__content h5 {
-  font-size: 35px;
-  line-height: 50px;
+  font-size: 22px;
+  line-height: 36px;
   font-weight: 600;
+  padding-top: 40px;
+}
+@media (min-width: 485px) {
+  .bridge__content h5 {
+    padding-top: 0;
+  }
+}
+@media (min-width: 530px) {
+  .bridge__content h5 {
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+@media (min-width: 1154px) {
+  .bridge__content h5 {
+    font-size: 35px;
+    line-height: 50px;
+  }
 }
 .bridge__company {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
   flex-grow: 1;
-  border-left: 1px solid #000;
-  padding-right: 35px;
+  border-top: 1px solid #000;
+  padding-top: 30px;
+}
+@media (min-width: 992px) {
+  .bridge__company {
+    border-left: 1px solid #000;
+    border-top: none;
+    padding-top: 0;
+    padding-right: 35px;
+  }
 }
 .bridge__company .companies {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+@media (max-width: 351px) {
+  .bridge__company .companies {
+    flex: 0 1 50%;
+  }
 }
 .bridge__company .companies > img {
   height: 38px;
@@ -1471,6 +1521,7 @@ figure {
 }
 .bridge__company .companies .stars__wrapper {
   margin-bottom: 13px;
+  display: flex;
 }
 
 .integration {
@@ -1534,13 +1585,14 @@ figure {
   background-color: #fff;
 }
 .footer-up__container {
-  padding: 87px 20px 50px 50px;
+  padding: 87px 40px 50px;
   position: relative;
 }
 @media (min-width: 739px) {
   .footer-up__container {
     display: flex;
     gap: 10px;
+    padding: 87px 20px 50px 50px;
   }
 }
 @media (min-width: 819px) {
@@ -1740,19 +1792,50 @@ figure {
 }
 .footer-down__container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   font-size: 12px;
   line-height: 15px;
 }
+@media (min-width: 729px) {
+  .footer-down__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .footer-down-content {
-  display: flex;
-  gap: 14px;
-  padding: 0 20px;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-down-content img {
+  margin-bottom: 20px;
+}
+@media (min-width: 729px) {
+  .footer-down-content img {
+    margin-bottom: 0;
+  }
 }
 .footer-down-content p {
   max-width: 300px;
 }
+@media (min-width: 729px) {
+  .footer-down-content {
+    display: flex;
+    gap: 14px;
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
 .footer-down-info {
-  padding: 0 97px 0 20px;
+  text-align: center;
+  align-self: center;
+}
+@media (min-width: 729px) {
+  .footer-down-info {
+    padding: 0 97px 0 20px;
+    text-align: left;
+  }
 }
