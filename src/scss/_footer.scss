@@ -1,10 +1,8 @@
 .footer-up {
     background-color: #fff;
     &__container {
-        
         padding: 87px 40px 50px;
         position: relative;
-
         @media (min-width: 739px){
             display: flex;
             gap: 10px;
@@ -43,12 +41,15 @@
     .up__info{
         font-size: 20px;
         line-height: 30px;
-
         &-title{
             font-size: 32px;
             line-height: 46px;
             font-weight: 600;
             margin-bottom: 22px;
+            text-align: center;
+            @media (min-width: 739px){
+                text-align: left;
+            }
             @media (min-width: 819px){
                 font-size: 40px;
                 line-height: 60px;
@@ -87,7 +88,6 @@
             gap: 10px 5px; 
             background: #fff;
         }
-
         @media (min-width: 1011px){
             gap: 20px 5px;
         }
@@ -127,7 +127,6 @@
             background: #FF9B7D;
             border-radius: 5px 5px 0 0;
             color: #fff;
-
             @media (min-width: 739px){
                 background: #fff;
                 box-shadow: none;
@@ -147,8 +146,7 @@
             display: none;
             transition: 1s;
             background: #FF9B7D;
-            border-radius: 0 0 5px 5px;
-            
+            border-radius: 0 0 5px 5px;           
             a:hover{
                 color: var(--color-button);
             }
@@ -180,8 +178,7 @@
         display: flex;
         flex-direction: column;
         font-size: 12px;
-        line-height: 15px;
-        
+        line-height: 15px;       
         @media (min-width: 729px){
             display: flex;
             justify-content: space-between;
@@ -198,8 +195,7 @@
             @media (min-width: 729px){
                 margin-bottom: 0;
             }
-        }
-        
+        }       
         p{
             max-width: 300px;
         }
@@ -219,6 +215,4 @@
             text-align: left;
         }
     }
-
-
 }

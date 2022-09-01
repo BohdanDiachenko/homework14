@@ -1640,6 +1640,12 @@ figure {
   line-height: 46px;
   font-weight: 600;
   margin-bottom: 22px;
+  text-align: center;
+}
+@media (min-width: 739px) {
+  .footer-up .up__info-title {
+    text-align: left;
+  }
 }
 @media (min-width: 819px) {
   .footer-up .up__info-title {

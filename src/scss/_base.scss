@@ -39,7 +39,6 @@ u{
     font-size: 31px;
     line-height: 38px;
     font-weight: 600;
-
     @media (min-width: 456px){
         font-size: 43px;
         line-height: 53px;
@@ -103,13 +102,9 @@ h6{
     margin: 0;
 }
 img {
-    // width: 100%;
     max-width: 100%;
     height: auto;
     vertical-align: top;
-    // .header & {
-    //     max-width: max-content;
-    // }
 }
 .dnon{
     display: none;
