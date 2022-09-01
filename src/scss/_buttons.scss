@@ -1,43 +1,123 @@
 .btn {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 45px;
     transition: background-color 1s, color 0.5s;
     border: solid 1px;
+    .header & {
+        @media (min-width:360px){
+            font-size: 16px;
+        }
+    }
     &__orange{
         color: #fff;
         background-color: var(--color-button);
         border-color:  var(--color-button) ;
         &:hover{
-            background-color: #fff;
-            border-color: #000;
-            color: #000;
+            background-color: #A4A14A;
+            border-color: #A4A14A;
+            color: #fff;
         }
     }
     &__white {
         background-color: #fff;
         border-color: #000;
         color: #000;
+
         &:hover {
-            background-color: var(--color-button);
-            border-color: var(--color-button);
-            color: #fff; 
-         }
+            background-color: #FFC500;
+            border-color: #FFC500;
+            color: #fff;
+        }
+        .header & {
+            &:active{
+                @media (max-width:991px){
+                    background: #ff9b7d29;
+                }
+            }
+        }
     }
     &__wide{
         display: block;
         width: 160px;
         line-height: 60px;
         text-align: center;
+        .hero & {
+            width: 100px;
+            line-height: 35px;
+            @media (min-width:360px){
+                width: 120px;
+                line-height: 40px;
+            }
+            @media (min-width:460px){
+                line-height: 45px;
+            }
+            @media (min-width:992px){
+                line-height: 60px;
+            }
+        }
+        .localization &{
+            line-height: 40px;
+            width: 150px;
+            @media (min-width: 456px){
+                line-height: 60px;
+                width: 160px;
+            }
+        }
+        .integration &{
+            line-height: 40px;
+            @media (min-width: 456px){
+                line-height: 60px;
+            }
+        }
     }
+
     &__very-wide{
         width: 193px;
+        .integration &{
+            width: 150px;
+            @media (min-width: 456px){
+                width: 193px;
+            }
+        }
     }
     
     &__narrow{
         display: block;
         width: 120px;
         text-align: center;
+        .header & {
+            width: 100px;
+            line-height: 35px;
+            position: relative;
+            z-index: 2;
+            // @media (min-width:533px){
+            //     width: 120px;
+            //     line-height: 40px;
+            // }
+
+            @media (min-width:360px){
+                width: 120px;
+                line-height: 40px;
+            }
+            @media (min-width:460px){
+                width: 160px;
+            }
+            @media (min-width:572px){
+                width: 120px;
+            }
+            @media (min-width:632px){
+                width: 160px;
+            }
+            @media (min-width:672px){
+                
+                line-height: 40px;
+            }
+            @media (min-width:992px){
+                line-height: 45px;
+                width: 120px;
+            }
+        }
     }
     &__bleck{
         background-color: #000;
@@ -50,7 +130,7 @@
         }
     }
 }
- [class*="__buttons"] {
+[class*="__buttons"] {
     display: flex;
     gap: 10px;
 }

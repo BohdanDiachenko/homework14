@@ -1,13 +1,32 @@
 .boost-productivity {
-    padding: 155px 0;
-    margin-bottom: 29px;
+    padding: 60px 0;
+    margin-bottom: 52px;
+    @media (min-width: 678px){
+        padding: 100px 0;
+    }
+    @media (min-width: 992px){
+        padding: 155px 0;
+    }
     &__container {
         background: #FFF;
         gap: 20px;
+        @media (min-width: 678px){
+            padding-left: 55px;
+        }
     }
     &__title{
-        margin-bottom: 75px;
-        padding: 0 20px;
+        margin-bottom: 40px;
+        padding: 0;
+        text-align: center;
+        @media (min-width: 450px){
+            padding: 0 20px;
+        }
+        @media (min-width: 678px){
+            margin-bottom: 75px;
+        }
+        @media (min-width: 1440px){
+            text-align: left;
+        }
     }
 
     &__list {
@@ -16,25 +35,44 @@
         padding: 0 20px;
         margin: 0 -15px;
         li{
-            flex: 0 0 calc(100% / 3);
+            flex: 0 1 100%;
             display: flex;
             flex-direction: column;
-            text-align: start;
+            text-align: center;
             gap: 7px;
             padding: 0 15px;
             font-size: 18px;
             line-height: 25px;
+            margin-bottom: 20px;
+            @media (min-width: 678px){
+                flex: 0 1 calc(100% / 3);
+                text-align: start;
+                margin-bottom: 0;
+            }
             .productivity-img{
                 display: flex;
                 align-items: center;
                 margin-bottom: 43px;
                 height: 200px;
+                justify-content: center;
+                @media (min-width: 678px){
+                    justify-content: flex-start;
+                }
             } 
             h4 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 22px;
+                line-height: 28px;
                 font-weight: 600;
-                margin-bottom: 27px;
+                margin-bottom: 20px;
+                @media (min-width: 653px){
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+                @media (min-width: 992px){
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 27px;
+                }
             }
             p{
                 margin-bottom: 22px;

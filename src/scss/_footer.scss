@@ -1,10 +1,21 @@
 .footer-up {
     background-color: #fff;
     &__container {
-        display: flex;
-        gap: 106px;
-        padding: 87px 20px 96px 50px;
+        
+        padding: 87px 20px 50px 50px;
         position: relative;
+
+        @media (min-width: 739px){
+            display: flex;
+            gap: 10px;
+        }
+        @media (min-width: 819px){
+            gap: 40px;
+            padding-bottom: 96px;
+        }
+        @media (min-width: 1440px){
+            gap: 106px;
+        }
         &::after{
             content: "";
             border-bottom: 1px solid #000;
@@ -18,16 +29,29 @@
     &-info {
         display: flex;
         flex-direction: column;
-        max-width: 300px;
+        // max-width: 300px;
+        flex: 0 0 250px;
+        padding-bottom: 50px;
+        @media (min-width: 739px){
+            padding-bottom: 0;
+        }
+        @media (min-width: 819px){
+            flex: 0 0 300px;
+        }
     }
     .up__info{
         font-size: 20px;
         line-height: 30px;
+
         &-title{
-            font-size: 40px;
-            line-height: 60px;
+            font-size: 32px;
+            line-height: 46px;
             font-weight: 600;
             margin-bottom: 22px;
+            @media (min-width: 819px){
+                font-size: 40px;
+                line-height: 60px;
+            }
         }
         &-image{
             margin-bottom: 31px;
@@ -39,23 +63,78 @@
         }
         p{
             margin-bottom: 15px;
+            text-align: center;
+            @media (min-width: 739px){
+                text-align: left;
+            }
         }
         a{
             font-weight: 600;
+            text-align: center;
+            @media (min-width: 739px){
+                text-align: left;
+            }
         }
     }
-    .footer__nav {
-        display: flex;
-        gap: 34px;
-        padding: 9px 34px;
+    .footer__nav {        
+        padding: 9px 15px;
+        @media (min-width: 739px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;   
+            flex: 0 1 918px;
+            gap: 10px 5px; 
+            background: #fff;
+        }
+
+        @media (min-width: 1011px){
+            gap: 20px 5px;
+        }
+        @media (min-width: 1328px){
+            gap: 34px;
+            padding: 9px 34px;
+        }
+        @media (min-width: 1440px){
+            flex-wrap: nowrap;
+            justify-content: start;
+            padding: 9px 34px;
+        }
         &-box {
             display: flex;
             flex-direction: column;
             flex: 0 0 187px;
-            h6{
+            margin-bottom: 15px;
+            @media (min-width: 739px){
+                margin-bottom: 0;
+            }
+        }
+        &--input{
+            position: absolute;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            &:checked ~ .footer__nav-menu {
+                display: block;
+            }           
+        }
+        &--title{
+            display: block;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 600;
+            text-align: center;
+            background: #FF9B7D;
+            border-radius: 5px 5px 0 0;
+            color: #fff;
+
+            @media (min-width: 739px){
+                background: #fff;
+                box-shadow: none;
+                color: #000;
                 font-size: 20px;
-                line-height: 25px;
-                font-weight: 600;
+            }
+            @media (min-width: 819px){
+                text-align: left;
             }
         }
         &-menu {
@@ -63,8 +142,32 @@
             flex-direction: column;
             gap: 11px;
             padding: 20px 0;
+            text-align: center;
+            display: none;
+            transition: 1s;
+            background: #FF9B7D;
+            border-radius: 0 0 5px 5px;
+            
             a:hover{
                 color: var(--color-button);
+            }
+            @media (min-width: 739px){
+                display: block;
+                background: #fff;
+                color: #000;
+            }
+            @media (min-width: 819px){
+                text-align: left;
+                display: block;
+            }
+            li{
+                padding-bottom: 15px;
+                a{
+                    color: #fff;
+                    @media (min-width: 739px){
+                        color: #000;
+                    }
+                }
             }
         }
     }

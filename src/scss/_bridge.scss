@@ -10,6 +10,7 @@
         align-items: center;
         gap: 67px;
         flex: 0 0 62%;
+        padding: 0 24px;
         h5{
             font-size: 35px;
             line-height: 50px;
@@ -22,6 +23,7 @@
         align-items: center;
         flex-grow: 1;
         border-left: 1px solid #000;
+        padding-right: 35px;
         .companies{
             display: flex;
             flex-direction: column;
